@@ -13,9 +13,9 @@ carb = float(input())
 print("How many grams of fat are in your item?")
 fat = float(input())
 
-protein_cals = protein * 4
-carb_cals = carb * 4
-fat_cals = fat * 9
+protein_cals = round(protein * 4, 2)
+carb_cals = round(carb * 4, 2)
+fat_cals = round(fat * 9,2)
 total_cals = protein_cals + fat_cals + carb_cals
 
 protein_cals_percentage = percentage(protein_cals, total_cals)
